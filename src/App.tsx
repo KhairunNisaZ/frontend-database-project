@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './routes/Home';
-import Store from './routes/Store';
+import Admin from './routes/Admin';
 
 export default function App() {
 	return (
@@ -11,8 +11,8 @@ export default function App() {
 					element={<Home />}
 				/>
 				<Route
-					path='/:storeId'
-					Component={Store}
+					path='/admin'
+					Component={Admin}
 				/>
 			</Routes>
 		</Router>
